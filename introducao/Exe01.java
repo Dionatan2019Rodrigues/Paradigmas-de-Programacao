@@ -1,4 +1,4 @@
-public class OperadoresAritmeticos {
+public class Exe01{
     public static void main(String[] args){
         int i = 28;
         int j = 43;

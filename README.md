@@ -1,7 +1,7 @@
 # Paradigmas-de-Programacao
  Diciplina do 3ºsemestre do curso de ciência da computação
 
-<p>Desta maneira gera um executável</p>
+- `Desta maneira gera um executável`
 
 ```
 $ javac exe01.java
@@ -9,7 +9,7 @@ $ javac exe01.java
 ```
 $ java exe01
 ```
-<p> OU </p>
+- `OU`
 
 ```
 $ java exe01.java

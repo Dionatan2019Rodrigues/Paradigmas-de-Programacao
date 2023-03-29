@@ -22,6 +22,7 @@ public class Exe03 {
                 
         }
         media /= cont_impar;
+        System.out.println("Quantidade de pares:"+cont_par);
         System.out.println("Soma dos pares:"+soma);
         System.out.println("Media dos impares:"+media);
             

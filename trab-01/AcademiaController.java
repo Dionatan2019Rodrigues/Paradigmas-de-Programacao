@@ -3,17 +3,19 @@ import java.util.List; // utilizado para criar Listas
 
 public class AcademiaController {
     // Configurações do banco de dados MySQL
-    private static final String URL = "jdbc:mysql://localhost:3306/nome_do_seu_banco";
-    private static final String USER = "seu_usuario";
-    private static final String PASSWORD = "sua_senha";
+    private static final String url = "jdbc:mysql://localhost:3306/academia";
+    private static final String user = "root";
+    private static final String password = "Dion2020Enem@";
 
     // Conexão com o banco de dados
     private Connection connection;
 
     public AcademiaController() {
         try {
-            connection = DriverManager.getConnection(URL, USER, PASSWORD);
+            connection = DriverManager.getConnection(url, user, password);
+            System.out.println("Conectado.");
         } catch (SQLException e) {
+            System.out.println("não Conectado.");
             e.printStackTrace();
         }
     }

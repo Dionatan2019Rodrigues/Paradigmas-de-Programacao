@@ -12,11 +12,13 @@ public class AcademiaController {
 
     public AcademiaController() {
         try {
+            Class.forName("com.mysql.jbdc.Driver");
             connection = DriverManager.getConnection(url, user, password);
             System.out.println("Conectado.");
+        }catch(ClassNotFoundException ex){
+            System.out.println("Driver ao banco de dados não localizado: " + ex.getMessage());
         } catch (SQLException e) {
-            System.out.println("não Conectado.");
-            e.printStackTrace();
+            System.out.println("Ocorreu um erro ao acessar o banco: "+ e.getMessage());
         }
     }
 
@@ -49,7 +51,7 @@ public class AcademiaController {
 
     public static void main(String[] args) {
         AcademiaController academiaController = new AcademiaController();
-
+        /* 
         try {
             // Exemplo de cadastro de aluno
             academiaController.cadastrarAluno("12345678900", "Fulano", Date.valueOf("2000-01-01"));
@@ -59,5 +61,6 @@ public class AcademiaController {
         } catch (SQLException e) {
             e.printStackTrace();
         }
+        */
     }
 }

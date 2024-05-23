@@ -1,5 +1,6 @@
-import java.sql.*; // utilizado em (Connection/PreparedStatement/ResultSet)
-import java.util.List; // utilizado para criar Listas 
+import java.sql.*; // utilizado em (Connection/PreparedStatement/ResultSet) 
+//     java.sql.* -> carrega todas, e não apenas uma de cada vez 
+import java.util.List; // utilizado para criar Listas -> Mais completa que ArrayList
 
 public class AcademiaController {
     // Configurações do banco de dados MySQL

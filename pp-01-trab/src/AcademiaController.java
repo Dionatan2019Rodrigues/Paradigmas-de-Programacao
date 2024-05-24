@@ -1,17 +1,25 @@
 import DAO.AlunoDAO; // importa a classe AlunoDAO onde estão os métodos do CRUD
-import entidade.Aluno; // importa a classe Aluno
+import DAO.ExercicioDAO; // importa a classe ExercicioDAO onde estão os métodos do CRUD
 
+import entidade.Aluno; // importa a classe Aluno
+import entidade.Exercicio; // importa a classe Exercicio
+
+import java.sql.Date;  //usado para converter tipo string em tipo Date
 import java.util.ArrayList; // usado para mostrar a lista do buscarAluno
 
 public class AcademiaController {
     public static void main(String[] args)  throws ClassNotFoundException  {
+
+    // Área de teste CRUD dos alunos
+    /*
         Aluno a = new Aluno();
         ArrayList<Aluno> lista = new ArrayList<>();
 
+     
         //INSERT DE ALUNOS NO DATABASE
-        a.setCpf("03681398091");
-        a.setNome("Correa");
-        a.setData_nasc("2001-03-01");
+        a.setCpf("03681398092");
+        a.setNome("Rodrigues");
+        a.setData_nasc(Date.valueOf("2001-03-01"));
 
         //Testando inserção no DB 
         //new AlunoDAO().cadastrarAluno(a);
@@ -32,6 +40,20 @@ public class AcademiaController {
         //Testando delete no DB 
         String nome_delete = "eduardo";
         new AlunoDAO().deleteAluno(nome_delete);
+    */
 
+    // Área de teste CRUD dos exercicios
+    /* 
+        Exercicio e = new Exercicio();
+
+        // INSERT de exercicios no DB 
+        e.setNome("supino-reto");
+        e.setMusculos_ativados("ombro-peito-triceps");
+
+        //Testando inserção no DB 
+        new ExercicioDAO().cadastrarExercicio(e);
+    */
+
+    
     }
 }

@@ -1,9 +1,11 @@
 package entidade; // nome do pacote ou seja da pasta 
 
+import java.sql.Date; // usado no tipo Date do atributo data_nasc
+
 public class Aluno {
     private String cpf;
     private String nome;
-    private String data_nasc;
+    private Date data_nasc;
 
     //*    Encapsulamento ******************/
     public String getCpf() {
@@ -20,10 +22,10 @@ public class Aluno {
         this.nome = nome;
     }
     /***************************************/
-    public String getData_nasc() {
+    public Date getData_nasc() {
         return data_nasc;
     }
-    public void setData_nasc(String data_nasc) {
+    public void setData_nasc(Date data_nasc) {
         this.data_nasc = data_nasc;
     }
 }

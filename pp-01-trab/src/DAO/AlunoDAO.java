@@ -20,12 +20,13 @@ public class AlunoDAO {
             ps = Conexao.getConexao().prepareStatement(sql);
             ps.setString(1, aluno.getCpf());
             ps.setString(2, aluno.getNome());
-            ps.setString(3, aluno.getData_nasc());
+            ps.setDate(3, aluno.getData_nasc());
 
             ps.execute();
 
         } catch (SQLException e) {
-            System.out.println("Erro de inserção no DB: "+ e.getMessage());
+            System.out.println("Erro de inserção de aluno no DB: "+ e.getMessage());
+            e.printStackTrace();
         }
     }
 
@@ -41,14 +42,14 @@ public class AlunoDAO {
                 Aluno aluno = new Aluno();
                 aluno.setCpf(rs.getString("cpf")); 
                 aluno.setNome(rs.getString("nome"));
-                aluno.setData_nasc(rs.getString("data_nascimento"));
+                aluno.setData_nasc(rs.getDate("data_nascimento"));
 
                 lista.add(aluno);
 
             }
 
         } catch (SQLException e) {
-            System.out.println("Erro de busca do DB: "+ e.getMessage());
+            System.out.println("Erro de buscado aluno no DB: "+ e.getMessage());
             e.printStackTrace();
         }
         return lista;
@@ -64,7 +65,8 @@ public class AlunoDAO {
 
             ps.execute();
         } catch (SQLException e) {
-            System.out.println("Erro de update no DB: "+ e.getMessage());
+            System.out.println("Erro de update do aluno no DB: "+ e.getMessage());
+            e.printStackTrace();
         }
     }
 
@@ -78,10 +80,10 @@ public class AlunoDAO {
             ps.execute();
             
         } catch (SQLException e) {
-            System.out.println("Erro ao tentar deletar no DB: "+ e.getMessage());
+            System.out.println("Erro ao tentar deletar um aluno no DB: "+ e.getMessage());
+            e.printStackTrace();
         }
 
     }
-
 
 }

@@ -3,7 +3,7 @@ package entidade;
 public class Exercicio {
     private Integer numero;
     private String nome;
-    private String musculos_ativados;
+    private String musculosAtivados;
 
     //*    Encapsulamento ******************/
     public Integer getNumero() {
@@ -21,9 +21,9 @@ public class Exercicio {
     }
     /***************************************/
     public String getMusculos_ativados() {
-        return musculos_ativados;
+        return musculosAtivados;
     }
-    public void setMusculos_ativados(String musculos_ativados) {
-        this.musculos_ativados = musculos_ativados;
+    public void setMusculos_ativados(String musculosAtivados) {
+        this.musculosAtivados = musculosAtivados;
     }
 }

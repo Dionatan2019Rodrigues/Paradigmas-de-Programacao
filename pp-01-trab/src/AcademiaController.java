@@ -1,7 +1,9 @@
 import DAO.AlunoDAO; // importa a classe AlunoDAO onde estão os métodos do CRUD
 import DAO.ExercicioDAO; // importa a classe ExercicioDAO onde estão os métodos do CRUD
 import DAO.PlanoDAO;  // importa a classe PlanoDAO onde estão os métodos do CRUD
-import DAO.PlanoAtivoDAO;  // importa a classe PlanoAtivoDAO onde estão os métodos do CRUD
+//import DAO.PlanoAtivoDAO;  // importa a classe PlanoAtivoDAO onde estão os métodos do CRUD
+
+//import service.Treino; // importa a classe OpcaoTreino 
 
 import entidade.Aluno; // importa a classe Aluno
 import entidade.Exercicio; // importa a classe Exercicio
@@ -12,7 +14,7 @@ import java.sql.Date;  //usado para converter tipo string em tipo Date
 import java.util.ArrayList; // usado para mostrar a lista do buscarAluno
 
 public class AcademiaController {
-    public static void main(String[] args)  throws ClassNotFoundException  {
+    public static void main(String[] args)  {
 
     // Área de teste CRUD dos alunos
     /* 
@@ -78,8 +80,8 @@ public class AcademiaController {
         new PlanoDAO().cadastrarPlano(p);
     */
 
-    // Área de teste de inserção de planos por parte do Instrutor 
-        
+    // Área de teste de insert de planos por parte do Instrutor 
+    /*     
         PlanoAtivo pa = new PlanoAtivo();
         String cpfAluno = "03681398089";
         Integer codigoPlano = 2;
@@ -92,6 +94,10 @@ public class AcademiaController {
 
         //Testando insert no DB 
         new PlanoAtivoDAO().cadastrarPlanoAtivo(pa);
+    */
+
+    // Área de teste de insert de opcoes de treino
+            
 
     }
 }

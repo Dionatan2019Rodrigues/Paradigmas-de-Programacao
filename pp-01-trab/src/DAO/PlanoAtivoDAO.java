@@ -14,8 +14,8 @@ public class PlanoAtivoDAO {
 
         try {
             ps = Conexao.getConexao().prepareStatement(sql);
-            ps.setString(1, planoAtivo.getAluno());
-            ps.setInt(2, planoAtivo.getOpcao_plano());
+            //ps.setString(1, planoAtivo.getAluno());
+            //ps.setInt(2, planoAtivo.getOpcao_plano());
             ps.setDate(3, planoAtivo.getData_inicio());
             ps.setString(4, planoAtivo.getDados_cartão());
             

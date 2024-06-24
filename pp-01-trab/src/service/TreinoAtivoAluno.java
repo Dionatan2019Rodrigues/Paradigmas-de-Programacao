@@ -10,7 +10,7 @@ public class TreinoAtivoAluno {
     //constructor
     public TreinoAtivoAluno(String nome) {
         this.nome = nome;
-        this.lista = new ArrayList<>();
+        this.lista = new ArrayList<ExercicioTreino>();
     }
     // getter's e setter's
     public String getNome() {

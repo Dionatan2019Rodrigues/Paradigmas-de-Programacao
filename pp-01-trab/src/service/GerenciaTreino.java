@@ -10,6 +10,7 @@ public class GerenciaTreino {
     public GerenciaTreino() {
         this.treinos = new ArrayList<>();
     }
+    
     // métodos criados 
     public void adicionarTreino(Treino treino) {
         treinos.add(treino);

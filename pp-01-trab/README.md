@@ -20,3 +20,6 @@ The `JAVA PROJECTS` view allows you to manage your dependencies. More details ca
 ## Compilação 
 
 $ cd /home/dionatan/Área\ de\ Trabalho/Dione/trab-01-pp ; /usr/bin/env /usr/lib/jvm/java-11-openjdk-amd64/bin/java @/tmp/cp_bzmb6g9qkuj8pg463vr9pgh19.argfile AcademiaController
+ 
+## Criação do DB
+
